@@ -17,7 +17,8 @@ docker start $1$2
 docker exec $1$2 sh scripts/run_procesado.sh $1 $2 
 docker cp $1$2:/workspace/Procesado/prueba.html /home/romel/management/tmp/prueba.html
 docker stop $1$2
-docker rm $1$2
+docker rm $1$2 
+docker cp /home/romel/management/tmp/prueba.html result_container:/workspace/result_app/web/templates/web/data/$1/consultoria.html
 
 
 
