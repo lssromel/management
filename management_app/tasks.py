@@ -3,10 +3,8 @@ from management.celery import app
 import subprocess
  
 @app.task
+# falta agregar parametros desde la vista y arreglar la autenticacion
 def Procesado_Datos():
     #self.update_state(state="PROGRESS", meta={'progress': "Limpiando los datos ..."})
-    subprocess.call(['./task_scripts/limpieza.sh'])
-    #self.update_state(state="PROGRESS", meta={'progress': "Preprocesando datos..."})
-    subprocess.call(['./task_scripts/procesado.sh'])
-    #self.update_state(state="PROGRESS", meta={'progress': "Visualizacion lista..."})
-    
+    subprocess.call(['./run_container.sh',"renting","colombia"])
+
