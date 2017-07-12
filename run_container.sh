@@ -13,9 +13,9 @@
 #sudo docker rm $1$2
 
 docker create --name $1$2 -it procesado
-docker start 
+docker start $1$2
 docker exec $1$2 sh scripts/run_procesado.sh $1 $2 
-docker cp tmp:/workspace/Procesado/prueba.html /home/romel/prueba.html
+docker cp $1$2:/workspace/Procesado/prueba.html /home/romel/management/tmp/prueba.html
 docker stop $1$2
 docker rm $1$2
 

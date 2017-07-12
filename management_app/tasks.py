@@ -6,5 +6,5 @@ import subprocess
 # falta agregar parametros desde la vista y arreglar la autenticacion
 def Procesado_Datos():
     #self.update_state(state="PROGRESS", meta={'progress': "Limpiando los datos ..."})
-    subprocess.call(['./run_container.sh',"renting","colombia"])
+    subprocess.call(['./run_container.sh',"renting","viajes"])
 
