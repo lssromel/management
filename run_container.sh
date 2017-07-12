@@ -19,6 +19,6 @@ docker cp $1$2:/workspace/Procesado/prueba.html /home/romel/management/tmp/prueb
 docker stop $1$2
 docker rm $1$2 
 docker cp /home/romel/management/tmp/prueba.html result_container:/workspace/result_app/web/templates/web/data/$1/consultoria.html
-
+rm tmp/prueba.html
 
 
