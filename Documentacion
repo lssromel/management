@@ -5,6 +5,12 @@ Management api
 user: romel
 pass: plataforma
 
+#usuario
+
+user: programador1
+pass: analista1
+
+
 # Comando para lanzar servidor 
 
 python manage.py runserver 8080

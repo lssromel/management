@@ -18,6 +18,8 @@ from django.contrib import admin
 from management_app.views import *
  
 urlpatterns = [
-    url(r'^inicio_tarea/', inicio_tarea),
+    url(r'^inicio_tarea', inicio_tarea),
+    url(r'^login_user/', login_user),
+    url(r'^logout_user',logout_user),
     url(r'^admin/', admin.site.urls),
 ]
