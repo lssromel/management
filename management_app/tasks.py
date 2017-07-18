@@ -5,7 +5,7 @@ import subprocess
 @app.task
 # falta agregar parametros desde la vista y arreglar la autenticacion
 def run_sh(directory):
-    subprocess.call(['./home/romel/management/tmp/run_container.sh'])
+    subprocess.call(["sh","/home/romel/management/tmp/run_container.sh"])
     #handle_uploaded_file(f,"/workspace/management_app/tmp/run_container.sh")
 
     #subprocess.call(['/workspace/management_app/tmp/run_container.sh'])
